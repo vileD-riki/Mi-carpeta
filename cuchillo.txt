@@ -1,0 +1,939 @@
+15:48 8/10/2019		
+		Curso:
+
+
+
+Esto es el resumen de lo que vot viendo en el curso hasta ahora, que me servira de wea para despues en la escuela con Alavrez, pero espero que nos enseñe esto por que sino me corto la gaver ya nomas...
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------	
+<h1>, <h2>, etc.: son los títulos o encabezados. Se utilizan para establecer determinados textos de la página como titulares, suelen tener un tamaño de fuente mayor para diferenciarlos del resto del texto. Son importantes en el posicionamiento en buscadores.
+<p>: el texto dentro de esta etiqueta forma un párrafo.
+<ul>: los textos dentro de esta etiqueta se estructuran en listas. Mediante el uso de <li> definimos cada guión dentro de la lista, y usando <ol> en lugar de <ul> tendremos listas ordenadas.
+<b> y <strong>: se utilizan para resaltar el texto.
+<u>: texto subrayado.
+<i> y <em>: texto en cursiva.
+<img   />
+
+es como una etiqueta unica
+
+cada img lleva un atributo llamado src (Source) o fuente en español
+
+<img src="URL_DE_ALGUNA_IMAGEN" />
+: <img src="https://placekitten.com/408/287" />
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+	--etiquetas en bloque:
+
+<p> = es un parrafo de mierda
+<div> = es un elemento en bloque, una caja 
+<ul> = lo unico que puede ir adentro de "ul" son las etiquetas "li".
+<li> = Dentro de "li" va todo lo que quieras.
+<ol> = es una lista sin orden, basicamente a diferencia de la otra esta no tiene numeritos al principio
+<hr> = es una linea utilizada en html y lo que hace es una linea en donde  la utilizea a lo largo de la pagina
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+- En linea:
+
+<img>=aling/width/height ejemplo: <img aling="rigth" />
+<span> = se utiliza para modificar palabras/ oraciones especificas.
+<strong> = esta wea hace que la letra sea negrita.
+<em>
+<br> = esta otra wea hace un salto de linea 
+
+..ejemplo:
+
+<h1><strong><em> Texto de ejemplo </em></strong></h1>
+
+Direcciones relativas:
+./ =busca en la misma carpeta.
+../ = sale de una carpeta y busca afuera.
+../../ = sale dos carpetas.
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+--Hacks para la vida:
+
+html:5 y aparecen un monton de cosas que desconozco por ahora...(3/7/19 ya no desconozco esas weas xd)
+
+		Otras etiquetas importates:
+		 header =dentro si o si va un h1
+		 nav= se usa para hacer menús del sitio web
+		 article= dentro del section, es basicamente contenido.
+		 section = seccion del sitio pueden repetirse las veces que quieran
+		 figure= se hace para que el buscador identifique una imagen.
+		 aside = barra lateral
+ 		footer = pie de pagina
+
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+-<html lang="en"> =esto es el idioma que lee el navegador.
+
+<meta charset="utf-8"/> : esto va dentro de head para habilitar los caracteres especiales. 
+
+	&copy;
+	&aacute; : caracteres especiales.
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+---------Tipos de apertura:
+
+	_blank: te abre una pestaña nueva
+	_self: abre en la misma pestaña
+	_Parent: abre una ventana padre
+	_top: abre en el padre superior
+
+-Hacer un pagina basica:
+
+	1) Header= h1
+
+	2) 3 Section = h2, titulo
+               img
+               p= texto
+	3) footer
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+-Links
+
+	1)Normal- sin target
+	2)con target_blank
+	3)con target_self
+
+-Tablas:
+
+	Etiqueta: <table> </table>                    .Width="100%"
+	filas: <tr>                                    .Border="yes"
+	Columnas: <td>
+	Cabecera de tabla: <thead> / <th>
+	Cuerpo de tabla: <tbody>
+
+	.Consejo: dibujarla antes de empezar a hacerla.
+
+	_combinar columnas:
+
+	colspan="2"
+
+	_combenar filas:
+
+	rowspan="2"
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+-_____Formularios:
+
+Etiqueta: <form action="URL"> </form>
+
+                        "#"
+
+.Entrada: <input />
+
+.Entrada de texto: <text area > mensaje </text area>
+
+.Boton de envio:<input type="submit" value="Enviar" />
+
+               <button> Enviar </button>
+
+Etiqueta: <label> Hola </label>
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+------Atributos:
+
+.input: type: text, email, number, button, date, range,text-area,
+       
+       value
+
+       place holder
+
+.ID: identificador (siempre unico). Todo elemento tiene un ID.
+
+.Label: "for" va  una ID.
+
+ejemplo:
+
+. <label for="nombre" > Lo que quieras </label>
+  <input type="text" ID="Nombre" />
+
+= Radio     : cada elemento del formulario puede/debe tener
+              "Name" 
+  Checkbox
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+-Lista desplegable:
+
+<select> </select>: una lista dezplegable que te permite elegir varias opciones
+
+<option> = value
+           selected
+
+--Atributos:
+
+select: name, id, multiple
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+-CSS Sectores:
+
+
+
+html:                       /          css
+
+atributo= class="nombre"    /          punto--> .nombre {Estilos}
+          id="nuse"         /          numeral--> #nuse {Estilos}
+
+
+elementos=
+
+p,div,table                           --> p {Etilos}
+
+ejemplo:
+
+<div>
+
+   <p>   ---> div (espacio) p {Estilos}
+
+</div>
+
+
+. div.text
+      ->p         } comparten el mismo ."nombre" por lo tanto se modifican a la par.
+
+.section.text
+    ->p
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+-*-Propiedades basicas
+
+	Margenes externos:
+
+		margin-top
+		margin-left
+		margin-bottom
+		margin-right
+
+      -simlpificado: margin:top right bottom left; --> en sentido de las agujas del relog
+              
+
+		.margin: 20px 10px; -> ejemplo si se repiten valores.
+
+		.margin:20px; -> esto es un valor global, afecta a todos los margenes.
+
+		.Existe la misma wea pero por dentro llamada {pading}.
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+   --Propiedades varias:
+
+	ejemplo:
+
+		#contenedor
+  		 	weidth:1000px:
+   			margin-left:auto;
+  			margin-rigth:auto;	
+
+	=margin: o auto; = esta mierda centra toda la caja donde va nuestro hmtl.
+
+
+	<div id="contenedor">
+	.......
+	</div>
+
+
+	.border: tamaño tipo color;
+           
+         1px solid red;
+
+
+	-tipos: (tiene las mimas reglas que el margin)
+	
+		solid: da un borde a lo que escribamos.
+	
+		dashed: una line ade puntos alrededor.
+	
+		datted: todavia mas pequeño.
+
+		double: el propio nombre lo dice.
+
+	-*-Estilos de fuentes:
+
+		letter-spacing( es el espacio que hay entre las letras);
+		font-family: tipo de letra
+		font-size: tamaño
+		color: color;
+		text-aling.left-center
+   	        	right-justify
+
+		.tipo1 .span {
+
+		 {font-size}
+
+		line-heigth(par aponer la altura de las lineas en px);
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
++--Fondos:
+
+	Backgruond= y son fondso pelotudo que mas queres que sean
+
+		-color:red;
+		-image:url("URL");
+		-repeat:no -repeat
+		repeat: se reiute para abajo y al lado
+			repeat-x
+			repeat-y
+
+	-size: 	cover: cubre el 100% de todo el fondo sin deformarse
+     		streach: este es una verga pero esta ahi
+		ancho _ Alto
+	
+	-Attachment: fixed;
+
+	-position: center center  = esta mierda rompe un montonde weas asi que utiliza otra caja externa para poder arreglarla pelotudo de mierda.
+          	 top 	  center  
+
+	-Float:  = esto en especial es una cagada pero se la tiene que usar para que tus columnas flotes cual mariposas llendo al sur.
+
+	-float:Left/right;
+	clear: arregla la wea rota
+	overflow:hidden
+----------------------------------------------------------------------------------------------------------------------------------------------------	
+
+_________-Positions:
+
+	= este hace que tu wea se mueva por donde se te de la gana	Absolute:
+
+	.cosa{
+
+	 position:absolute;
+	 top:30px;
+ 	left:10px;
+
+	}
+
+	Relative: esta wea solo el hijo se mueve por su zona, si se pone asi mismo podes moverlo como se te cante los huevos...	
+	
+	.contenedor{
+
+	 position:relative
+
+	}			
+	    
+	Fixed: la wea se queda fija.
+	
+	*Las clases pueden tener 2 nombre distintos, para modificar un texto heredando atributos de otro css
+
+	Z-indes= mientras mas alto es el numero prioriza a ese elemento por encima de otro
+
+	-List-style:none =no entendi esta wea, se lo preguntare despues
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+- ci es... es Magic:
+
+	Box-sizing: border-box; (esta wea es magica )
+
+	Y otra cosa importante es que el "*" modifica todo en un html, por ejemplo con background, a todo en el html tendra un fondo
+
+
+	El footer va dentro del body y debe estar adentro del contenedor, dejar comentarios para recordadr donde terminan las weas de mierda 
+
+	 Si tenemos dos clases en un mismo contenedor solo modificara los contenedores con las mismas dos clases, y las weas pueden tener mas de 2 clases espero 	hacer una con 200 clases.
+
+
+
+	..Box-shadow: 0 0 10px "color"			
+----------------------------------------------------------------------------------------------------------------------------------------------------
+*Estados (en enlaces):
+
+	:hover: Mouse sobre el elemento 
+
+	:link: enlace en estado normal
+
+	:visited: enlace visitado  
+
+	:active: elemento activo
+
+
+--Transitions:
+
+	transition: propiedad tiempo;) efecto demora;
+
+--Tranformaciones:
+
+	transform: muchas:
+
+	scale (1.1);
+	rotate (5deg);
+	
+	**Display: inline-block: combina la naturales de los bloques y las lineas, ya que las linea sno pueden llevar margenes por ejemplo se utiliza esta etiqueta para utilizar elementos de los bloquesen las lineas.
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+*Display:
+
+	inline: elementos en linea
+
+	block: elementos en bloque (cajas);
+
+	inline-block: elemento en bloque s opero visualizados como elementos en linea.
+
+	Otros pueden ser:
+
+	table, flex, etc.	
+
+
+*Background: linear-gradient( color 1, color 2);
+
+	Usamos la wea de RGBa (donde "a" sirve para la transparencia).
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+--Selectores
+
+	Clase: first-child: selecciona el primer elemento.
+	
+	clase: Last-child: la miesma mierda pero en vez del primero selecciona el ultimo.
+	
+	clase "+" : elemento siguiente.
+
+	clase ">" : Selecciona hijo al primer nivel.
+
+	"  : nth-child(N): Selecciona elementos especificos o elementos multiples.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+--Media Queries: ( es pal cel)
+
+	-Diseños Responsive
+	
+	-Diseños Adaptables
+
+	-Responsive Web Desing
+
+* Para que el ancho funcione hay que poner "max-width" por que si no no funciona.
+ 
+	
+  Ejemplo:
+
+	.col {
+		width:100%
+	}		
+		(esta wea queda pa la mierda en telefono)
+
+	@Media ( es el medio al cual se le va a aplicar el .css) screen/print (pantalla/imprimir) and (max-width 400px){
+
+		.col{
+			width:100%
+
+		}
+	}
+
+
+  
+----------------------------------------------------------------------------------------------------------------------------------------------------
+	
+  Java Script(por fin la concha de mi madre):
+
+	Variables:
+		es un espacio de memoria donde guardar datos.
+		
+     *tipos:
+	 	number: numero -> Entero
+			       -> Flotante (decimales)
+
+		string: Cadena de texto.
+	
+		boolean: valores verdadero o falso.
+	
+		Array: Vector para  guardar valores.
+		
+		
+
+    *Document Object Model
+
+             "DOM"
+
+		-Buscar elemento (document.QuerySelector('.bloque1'))
+
+	*Insertar JS 
+
+		<script>
+			JS here	
+		</script>
+		
+		o
+
+		<script src="url-JS">
+
+		</script>
+
+    *Asignacion de elementos
+	Bindeo'
+	Bind
+
+		click, mouseenter, mouseleave, etx
+
+	funcion: add event lister ('evento',funcion)
+
+	.classlist : te da la lista de las clases de los bloques
+		: add, remove , toggle (no pongas un pingo el . por que sino no anda)(esta es magique pone o saca propiedades)(Usa comullas dobles por que sino no anda)
+
+
+	
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+-JavaScript para beibis:
+	
+	valor : prompt ('mensaje')
+
+	*Convertir a entero:
+
+		parseInt (variable)
+
+	*Convertir a flotante:
+
+		parseFloat(variable)
+
+	*Condiciones:
+
+		if(tal cosovich){
+			...
+			}
+		else{
+		...
+			}
+
+	-Numero random:
+
+			al parecer el comando Math.random() puede seleccionar un numero aleatoriamente pero aunque no actualices la pagina no 
+			seleccionara otro numero de mierda, 3 horas llevo buscando y me cago en la mierda la puta madre ojala me muera... la puta madre
+			del javascript y la concha de su madre.	
+
+
+	*Calcular el mayor   <--(Esta verga me va a servir por que nico rompe los huevos con que tenemos que aprender esto pero se preocupa para nuestro futuro)
+		(simple):
+
+	mayor = 0;
+
+	valores = [1,2,3,4,5]
+
+	contador = 0
+
+	while (contador < valores.length){
+
+		if(mayor<list[c]){
+			maryor = valores[contador]
+		}
+		contador++; <---Esta mierda es lo mismo que poner "contador = contador + 1"
+
+	}
+
+		
+
+
+	*Ciclo For:
+
+		for(1;2;3)
+
+	1)_Inicializacion del contador
+
+	2)_Contador
+
+	3)_Incremento del contador
+
+
+	ej:
+		var list = [2,10,1,80000000000000000];
+
+		for(var (es la misma aca si pones o no "var") c=0; c<list.length; c++){
+			
+			console.log(list[c]);
+		} 
+
+
+	Window: 
+
+		La ventana es ya un elemento de la wea.
+
+			que se puede poner : 'keydown','keyup','keypress'.
+				(event.keyCode)
+
+		.eq(posicion) = para seleccionar esa posicion.
+
+		.trigger('click')= es como si le dieras un click.
+	Swicht(funcion)
+
+		case (el caso)
+		break (para terminar)
+
+	El pelotudo de martin dijo que != significa que no es igual
+
+
+
+
+	Arrays:
+	
+		para saber la posicion de un numero:haces una variable que seaiguala menos 1(ya que nohay una posicion menos 1 en la array) , para recorrer una 	array utilizamos el for (declarando el contador, la condicion (c<longitud) y la suma), dentro un if con la condicion de lalista sub c igual igual a 10. 
+
+	O tambien utilizando el indexOf() que ya te da la ubicacion de el numero que este entre los parentesis.
+
+
+	para multiplicar toda la array por 2:
+
+		haces otra lista vacia, para despues llenarla, creando una variable multiplicando cada numero de la primera por 2, luego pusheandolo en la 		nueva array. 
+
+	Map:
+
+		A la lista le agregas .map para que ejecute una funcion en cada elemento de la array. Utilizando return que te devuelve lo que se te cante.
+
+		Lo que hace es un array nuevo y le pasamos una funcion que se ejecutara por toda la array. Lo mas facil es que como tiene return lo metes en 		una variable y listorti.
+
+	Filter:
+
+		Devuelve los valores filtrados, como return valor > 10;   si queres poner que sean o en una condicion en una condicion || <--usa esa mierda
+		Para hacer una Funcion anonima, basicamente tenes que poner entre los parentesis del filter la funcion directamente sin el nombre de esta.
+
+
+
+	Objetos:
+
+			Example:
+				var persona = {nombre(Esto es una clave):'Anto'(Esto es un valor),(Se separa una clave de otra con una coma)apellido: 'Moreno'}
+
+
+				Para acceder al valor : persona.nombre (te tiene que devolver el valor).
+
+	Sort y Reverse:
+
+	 En las arrays para invertirlas es .reverse(). Sort() es para ordenar la wea. Para ordenar la wea bien, porque sort tiene problemas con los enteros
+ 	le metemos en los parentesis del sort una funcion anonima (a, b) donde retornamos a-b y magicamente se ordena. La wea tambien funciona con las letras.
+
+
+	.slice(0, 10 <---ejemplo): es para cortar una array en lugares especificos.
+
+
+	
+	
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+-Diagrama de flujo:
+
+	( Ovalo ) incicio y fin del programa
+
+	( Paralelogramo ) ingreso de datos
+
+	( Cuadrado ) delcaracion de variables
+
+	( Rombo ) Condicion
+
+	( Cono acostado con base circular ) mostrar por pantalla
+
+	( Cuadrado con circulo raro asi bien feo ) imprimir o no se que chota
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------- 
+
+*Flex - shrink / grow / basis
+	para los  Flex-items
+
+	-Flex-shrink : indica cuando se achica el item dependiendo el tamaño del padre .
+
+	-Flex-grow : indica cuando se agranda el item de pendiendo del tamalo del padre . 
+
+	-Flex-basis : indica el tamaño del item . 
+
+
+(Align-items: es de arriba a abajo y el justify es para los lados)
+
+
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------            J-Query:
+
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> (Con esta verga ya anda el jquery);
+
+
+			$('cualquier cosa') <-- Esta wea 			
+	
+
+	**un booleano tine dos valores : true / false
+	
+	*bucle de repeticion: Arrays <-- vectores
+
+			lista de elemnentos 
+
+			- var lista = [1,2,3,4]
+(Que este en corchetes es imprtante por que sino no te anda una mierda, hijo de puta como rompe los huevos a puta madre) (todas las posiciones comienzan en 0)
+
+			lista[0( para imprimir el primer valor, lo que esta entre corchetes es el valor de la posicion)] => 1
+
+			(.length) = muestra la longitud que llega la lista, osea que muertra todos los datos que estan en las posiciones.
+											      
+			(.push) = enpujas un  valor (se pueden poner operaciones dentro de los parentesis).
+
+			-Un contador se lo inicia en 0 para reprensentar a posicion que esta en al lista.
+
+			-while= "hacer mientras" es un buble que hacemos para que el contador haga su funcion, la de contar. Y para hacer otro 
+						 bucle hay que poner el contador a cero de nuevo por que sino no te anda una chota tampoco
+
+			-Para hacer un promedio es la suma  dividido en list.length.
+
+		*Esto sirve para los menus:
+		
+	
+			-slideUp: hace para arriba
+			-slideDown: hace para abajo
+			-slideToggle:hace pa arriba y abajo
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+	GitHub:
+
+		Primero creas un repositorio local, y luego entras a github.com y creas un repositorio remoto para poder encontrarlo en internet 
+
+	
+	*Agragar repo remoto: git add origin <url>
+
+				     [Nombre de repo]
+
+	*Para subir algun cambio al supositorio : git push repo 	rama
+							   [origin]	[master]
+
+
+	*para descargar algo: git pull (lo mismo que push pero para descargar)
+
+	
+	*Git clone <url>: para copiar o clonar el proyecto de otro compa. (pa compiar teni que pone que sea SSH)
+
+
+
+
+	-Ramas:
+
+
+			*master o-o-o-o-o-o-o-o-o-o-o-o
+			*otra rama	\-o-o-o-o-o/
+
+		*Crear rama: git Branch nombre-rama
+	
+		*ir a rama: git checkout nombre-rama
+	
+		*Crear e ir a rama: git checkout -b nombre-rama
+		
+		*combinar : git marge (nombre de la rama)
+
+		*fetch: para que podas tener las otras ramas en tu dispositivo local
+
+
+		*Al subir la rama se debe poner el origen y el nombre de la rama.
+
+		* Cuando vayas a subir tu parte, pone en el nombre de la rama
+
+		*Nunca hagas un push master por que sino se hace aca todo
+
+		
+
+
+	-Rebase:
+
+		Si tenes comflictos, te vas a master y haces un pull origin master.
+
+		cambias a la rama, y de ahi haces un rebase master. 
+
+		Luego metele un status, y te dira el conflic. Borrás pal aca lo que te pone en el Stylesheets.
+
+		Haces un add . , haces un rebase --continue. Al ultimo forzas con un push origin rama -f <--- Esto es para forzar el push.
+
+
+	Orden:
+		*Actualizar tu rama con master: git pull --rebase origin master (En tu rama)
+
+		*Actualizar rama: git pull --rebase origin rama 
+
+		*En rebase: git add.
+
+			    git rebase --continue
+
+		*Al final del rebase subir forzado: git push origin 'rama' -f <--- es para forzar cosillas
+		
+		
+		____________________
+		|1. git checkout master
+		|
+		|2. git pull origin master
+	        | 
+		|3. git checkout rama
+		|
+		|4. git rebase master      	
+ 		---------------------	
+
+		*Pones git pull --rebase origin master y tenes todo actualizado
+
+		*Cuando aparezcan letras amarrilas y diga "rechazado", haces un push forzado 			   
+	
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+21:43 16/10/2019
+
+		Destructuracion:
+
+						
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+22:05 21/10/2019
+
+		Xampp:
+		
+	Apache es para la parte de sevidores
+
+
+	con localhost/phpmyadmin en chrome, con el utf8 es la wea para los buenos caracteres, creamos la wea con utf8_general_ci con el nombre obveo.
+
+	Luego de crear la tabla le metemos el numero de columnas con su nombre y valor, en este caso varchar, la creamos y listorti. Luego para insertar, hay una pestaña arriba que dice insertar, ahi al final te dice el numeros de weas que queres insertar.
+
+	*Para insertar algo es = "INSERT INTO <tabla> (campo1, campo2)
+					values('Hola', 'bb')"
+
+	*Para eliminar es = "DELETE FROM <tabla> WHERE <campo> = '' " 
+
+	*Delete sin WHERE borra toda la tabla
+
+	*Para limitar cualquier wea, como deletear solamente uno = <--(continua) LIMIT 1; (para que borre solo el primero que encuentre).	 
+
+
+	varchar: 250 caracteres 
+
+
+
+
+
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+	LOS "a" SON ELEMENTOS EN LINEA, PELOTUDO PONE EL DISPLAY INLINE-BLOCK
+	
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+var gem1 = new Audio('audio/gem1.mp4');
+        var gem2 = new Audio('audio/gem2.mp4');
+        var gem3 = new Audio('audio/gem3.mp4');
+        
+        var yame = new Audio('audio/yamete.mp4');
+       
+        var egg = new Audio('audio/price.mp4');
+
+
+        function play1(){
+            gem1.play();
+        }
+        $('.audio1').on('click', play1);
+
+        
+        function play2(){
+            gem2.play();
+        }
+        $('.audio2').on('click', play2);
+
+        
+        function play3(){
+            gem3.play();
+        }
+        $('.audio3').on('click', play3);
+
+        function play5(){
+            yame.play();
+        }
+        $('.audio5').on('click', play5);
+----------------------------------------------------------------------------------------------------------------------------------------------------
+		**Comentarios: se utilizan con: <!--Texto de ejemplo--> y son bastante utiles en especial para bastardos sin madre como el que esta leyendo 				esto.					
+		
+   	(Mobile First es una cagada)                                                                                                                                                                                                                         **En simple grid el container va con "class", id no va una mierda.    
+
+
+**(3/7/19 estoy por aprender como subir weas al inter como por ejemplo historias turbias con mi tio el violin acosador de mierda)
+
+
+	*Flex (esta wea es para no tiltearte con los floats):
+
+
+1160 64 1567
+	 
+
+----------------------------------------------------------------------------------------------------------------------------------------------------			<div class="parrafo">
+                <div class="r1">
+                       1) Su Respuesta es: correcta
+                </div>
+            </div>
+            <div class="parrafo2">
+                    <div class="r2">
+                           1) Su respuesta es : incorrecta
+                    </div>
+            </div>
+-----------------------------------------------------------------------------------------------------------------------------------------------------------      
+
+	var resp_1 = parseInt(prompt('Que es Fuerza? : \n 1-Es aquello capaz de arreglar cosas  \n 2-Fuerza es todo aquello capaz de modificar la cantidad de movimiento de los materiales \n 3-ES la capacidad de que tiene el hombre de respirar'));
+        
+        if (resp_1 == 1){
+            $('.a').addClass("r2");            
+            $('.r_c').addClass("r1");
+        }else if(resp_1 == 2){
+            $('.r_c').addClass("r1");
+            var resp_2 = parseInt(prompt('Pregunta 2 : Que es una magnitud? : \n 1-Es una capacidad de los cuerpos que puede ser medida \n 2-La capacidad de un cuerpo al doblarse \n 3-Es la linea de un vector '));           
+        }else if(resp_1 == 3){
+            $('.b').addClass("r2");
+            $('.r_c').addClass("r1");
+        }
+        
+        if (resp_2 == 1){            
+            $('.r_c').addClass("r1");
+            var resp_3 = parseInt(prompt('Pregunta 3 :  Cual de estas es una Ley de Newton : \n 1-Todo lo que cae sube \n 2-Todo cuerpo que sigue en reposo hace una linea curva  \n 3-Accion y Reaccion'));
+            $('.rp2').show();
+        }else if(resp_2 == 2){
+            $('.a1').addClass("r2");
+            $('.r_c').addClass("r1");
+            $('.rp2').show();
+        }else if(resp_2 == 3){
+            $('.b1').addClass("r2");
+            $('.r_c').addClass("r1");
+            $('.rp2').show();
+        }
+        
+        if (resp_3 == 1){
+            $('.r_c').addClass("r1");
+            $('.b1').addClass("r2");
+            $('.rp3').show();
+        }else if(resp_3 == 2){
+            $('.a1').addClass("r2");
+            $('.r_c').addClass("r1");
+            $('.rp3').show();
+        }else if(resp_3 == 3){          
+            $('.r_c').addClass("r1");
+            $('.rp3').show();
+        }
+
+_--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<p class="info">
+                    <span>Paraguay logró una prosperidad económica y compartida impresionante en los últimos 15 años</span>.  La economía creció al 4,5 por ciento anual en promedio (2004-2017), más rápido que en la mayoría de sus comparadores regionales.  Este crecimiento económico estuvo acompañado por reducción de la pobreza. Desde 2003, la pobreza total y la extrema disminuyeron en 49 y 65 por ciento, respectivamente.  En general, la reducción de la pobreza en Paraguay fue mayor que la reducción regional promedio, aunque no tan fuerte al considerar la tasa de crecimiento económico.  También hubo un rápido aumento de los ingresos del 40 por ciento más pobre de la población, que aumentó a 4.5 por ciento anual durante el período 2003-2017. La clase media casi se duplicó desde 2003 alcanzando el 38 por ciento de la población total, convirtiéndose así en el segundo grupo más grande, justo por debajo de la población vulnerable.
+            </p>                                                    
